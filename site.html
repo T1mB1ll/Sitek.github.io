@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт Преподавателя Максима Юрьевича</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHN0dWRlbnR8ZW58MHx8fHwxNjM4ODc1MDE5&ixlib=rb-1.2.1&q=80&w=1080');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background: rgba(44, 62, 80, 0.9);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+            nav a {
+                margin: 0 20px;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                transition: color 0.3s ease;
+            }
+
+                nav a:hover {
+                    color: #3498db;
+                }
+
+        section {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: #2980b9;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(44, 62, 80, 0.9);
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background: #3498db;
+            color: #fff;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+            .course:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            }
+
+        blockquote {
+            border-left: 4px solid #2980b9;
+            padding-left: 15px;
+            margin: 10px 0;
+            font-style: italic;
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+
+            blockquote:hover {
+                background: #e9ecef;
+            }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+            .contact-info div {
+                margin: 10px;
+                flex-basis: 30%;
+                text-align: center;
+            }
+
+        .social-links a {
+            display: block;
+            color: #2980b9;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            .social-links a:hover {
+                color: #3498db;
+            }
+
+        /* Медиа-запросы для адаптивности */
+
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                .contact-info div {
+                    flex-basis: 100%; /* Занять всю ширину на мобильных устройствах */
+                }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 1.5em; /* Уменьшение шрифта заголовка для мобильных */
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            nav {
+                margin: 10px 0;
+            }
+
+                nav a {
+                    margin: 0;
+                }
+
+            .courses {
+                grid-template-columns: 1fr; /* По одному блоку на маленьких экранах */
+            }
+
+            footer {
+                font-size: 0.9em; /* Уменьшение шрифта в футере на мобильных */
+            }
+        }
+ы
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Преподаватель Максим Юрьевич</h1>
+        <nav>
+            <a href="#about">О преподавателе</a>
+            <a href="#courses">Курсы</a>
+            <a href="#testimonials">Отзывы студентов</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>О преподавателе</h2>
+        <p>Максим Юрьевич — опытный преподаватель с более чем 10-летним стажем. Его увлеченность и профессионализм вдохновляют студентов на достижение высоких результатов.</p>
+
+        <p>Имеет степень магистра в области компьютерных наук и активно участвует в научных исследованиях, проводя семинары и тренинги для студентов.</p>
+    </section>
+
+    <section id="courses">
+        <h2>Курсы</h2>
+        <div class="courses">
+            <div class="course">
+                <h3>Основы программирования</h3>
+                <p>Изучение базовых принципов программирования на Python. Практические задания и проекты.</p>
+            </div>
+            <div class="course">
+                <h3>Алгоритмы и структуры данных</h3>
+                <p>Углубленное изучение алгоритмов, структур данных и их применения.</p>
+            </div>
+            <div class="course">
+                <h3>Веб-разработка</h3>
+                <p>Создание современных веб-приложений с использованием HTML, CSS и JavaScript.</p>
+            </div>
+            <div class="course">
+                <h3>Мобильная разработка</h3>
+                <p>Введение в разработку мобильных приложений на платформе Android.</p>
+            </div>
+            <div class="course">
+                <h3>Системное программирование</h3>
+                <p>Технологии системного программирования и работа с низкоуровневыми языками.</p>
+            </div>
+            <div class="course">
+                <h3>Искусственный интеллект</h3>
+                <p>Основы машинного обучения и нейронных сетей.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Отзывы студентов</h2>
+        <blockquote>"Максим Юрьевич — лучший преподаватель! Он всегда поддерживает и помогает." — Студент 1</blockquote>
+        <blockquote>"Занятия проходят интересно и увлекательно. Я узнал много нового." — Студент 2</blockquote>
+        <blockquote>"Курс по веб-разработке помог мне создать собственный проект. Рекомендую!" — Студент 3</blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <div>
+                <strong>Email:</strong>
+                <p>maxim@example.com</p>
+            </div>
+            <div>
+                <strong>Телефон:</strong>
+                <p>+7 (123) 456-7890</p>
+            </div>
+            <div>
+                <strong>Социальные сети:</strong>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Сайт преподавателя Максима Юрьевича</p>
+    </footer>
+
+</body>
+</html>
